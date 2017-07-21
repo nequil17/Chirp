@@ -44,7 +44,6 @@ mainApp.config(function($routeProvider) {
            .success(function(response){
                $http.get('/api/chirps')
                .then(function (response) {
-               console.log(response);
                $scope.postList = response.data;
            });
        });    
@@ -75,7 +74,6 @@ mainApp.config(function($routeProvider) {
            .success(function(response){
                $http.get('/api/chirps')
                .then(function (response) {
-               console.log(response);
                $scope.postList = response.data;
                $location.path('/list/');
            });
