@@ -1,1 +1,12 @@
 <h2>A list of your chirps!</h2>
+<button type="button"><a href="#/">Return Home!</a></button>
+
+<div ng-controller="getRequest">
+ <div ng-repeat="post in postList">
+     <div ng-click='deleteData(post.id)'>
+    <p>User : {{ post.user }} </p>
+    <p>Message : {{ post.message }} </p>
+    </div>
+    <button ng-click="getId(post.id)" type=submit>Click Here!</button>
+</div> 
+</div>
