@@ -1,6 +1,8 @@
-<div>
-<div>
-Username: <input ng-model="name" /><br/><br/>
-Chirp: <input ng-model="age" /><br/><br/>
- <input type="button" value="Send" ng-click="postdata(name, chirp)" /> <br/><br/> 
-</div>
+<button type="button"><a href="#/">Return Home!</a></button>
+<div ng-controller='addController'>
+<input type="text" placeholder="user" ng-model="user">
+<input type="text" placeholder="message" ng-model= "message">
+<input type="submit" value="newChirp" ng-click="insertData()">
+</div> 
+
+ 
